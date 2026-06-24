@@ -1,0 +1,157 @@
+/* VARIABLES CSS */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --light-background-color: #f5f5f5;
+  --dark-text-color: #333333;
+
+  --font-family-primary: 'Inter', sans-serif;
+  --font-family-secondary: 'Poppins', sans-serif;
+
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-extra-large: 32px;
+}
+
+/* BASE STYLES */
+body {
+  margin: 0;
+  font-family: var(--font-family-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-large);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: var(--spacing-medium) var(--spacing-large);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(8px);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-medium);
+}
+
+.cta-button {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* SERVICES SECTION */
+.services .service-item {
+  background-color: var(--light-background-color);
+  border-radius: 8px;
+  padding: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.services .service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials blockquote {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-small);
+  color: var(--dark-text-color);
+}
+
+.testimonial-item {
+  background-color: var(--light-background-color);
+  border-radius: 8px;
+  padding: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+/* CONTACT FORM SECTION */
+.contact-form label {
+  display: block;
+  margin-bottom: var(--spacing-small);
+  color: var(--dark-text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: var(--spacing-medium);
+  margin-bottom: var(--spacing-large);
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: var(--dark-background-color);
+  padding-top: var(--spacing-large);
+  padding-bottom: var(--spacing-large);
+}
+
+.footer ul.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--spacing-medium);
+}
+
+.footer ul.social-links li a {
+  color: var(--light-text-color);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .services .service-item,
+  .testimonials blockquote {
+    font-size: 1.5rem;
+  }
+}
