@@ -62,18 +62,31 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Mejorado el gradiente */
   backdrop-filter: blur(8px);
+  position: relative; /* Para posicionar elementos en overlay */
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: var(--spacing-medium);
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombra suave */
 }
 
 .cta-button {
   display: inline-block;
   font-weight: bold;
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: #fff;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: darken(var(--accent-color), 10%); /* Cambio de color suave */
 }
 
 /* SERVICES SECTION */
