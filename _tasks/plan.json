@@ -1,0 +1,133 @@
+{
+  "project_name": "landing_page_construccion",
+  "description": "Landing page profesional para una empresa de construcción con diseño moderno y funcionalidades interactivas.",
+  "tech_stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "tasks": [
+    {
+      "title": "Planificar estructura HTML",
+      "description": "Crear archivo index.html con las secciones principales: hero, servicios, testimonios, formulario de contacto y footer.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [],
+      "priority": 1
+    },
+    {
+      "title": "Diseñar estilos CSS base",
+      "description": "Crear archivo styles.css con variables CSS para colores, fonts, márgenes y paddings. Establecer estilo mobile-first.",
+      "assigned_to": "ui_expert",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Implementar hero section con gradiente",
+      "description": "Agregar HTML para la sección hero y CSS para el fondo degradado y diseño moderno.",
+      "assigned_to": "ui_expert",
+      "dependencies": [
+        "task_001",
+        "task_002"
+      ],
+      "priority": 3
+    },
+    {
+      "title": "Diseñar sección de servicios con iconos SVG",
+      "description": "Agregar HTML y CSS para la sección de servicios, incluyendo iconos SVG modernos.",
+      "assigned_to": "ui_expert",
+      "dependencies": [
+        "task_001",
+        "task_002"
+      ],
+      "priority": 3
+    },
+    {
+      "title": "Crear cards animadas para testimonios",
+      "description": "Agregar HTML y CSS con animaciones para las cards de testimonios.",
+      "assigned_to": "ui_expert",
+      "dependencies": [
+        "task_001",
+        "task_002"
+      ],
+      "priority": 3
+    },
+    {
+      "title": "Implementar formulario de contacto funcional",
+      "description": "Agregar HTML para el formulario de contacto y JavaScript vanilla para validación básica.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 3
+    },
+    {
+      "title": "Diseñar footer con redes sociales",
+      "description": "Agregar HTML y CSS para el footer con iconos de redes sociales.",
+      "assigned_to": "ui_expert",
+      "dependencies": [
+        "task_001",
+        "task_002"
+      ],
+      "priority": 3
+    },
+    {
+      "title": "Implementar dark mode",
+      "description": "Agregar JavaScript vanilla para cambiar el tema a dark mode con variables CSS.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_002"
+      ],
+      "priority": 4
+    },
+    {
+      "title": "Hacer la landing page responsive",
+      "description": "Asegurar que todos los elementos sean responsivos en diferentes dispositivos, ajustando CSS según sea necesario.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001",
+        "task_002"
+      ],
+      "priority": 4
+    },
+    {
+      "title": "Optimizar imágenes y archivos",
+      "description": "Optimizar tamaño de imágenes y reducir peso de CSS/JS, asegurando que la página cargue rápidamente.",
+      "assigned_to": "tools_api_agent",
+      "dependencies": [
+        "task_001",
+        "task_002"
+      ],
+      "priority": 5
+    },
+    {
+      "title": "Pruebas funcionales y correcciones finales",
+      "description": "Realizar pruebas en diferentes navegadores y dispositivos, corrigiendo errores y ajustando estilos si es necesario.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001",
+        "task_002"
+      ],
+      "priority": 6
+    },
+    {
+      "title": "README",
+      "description": "Crear README.md con descripción del proyecto, screenshot placeholder y instrucciones de uso.",
+      "assigned_to": "writer_agent",
+      "dependencies": [
+        "task_001",
+        "task_002",
+        "task_003",
+        "task_004",
+        "task_005",
+        "task_006",
+        "task_007",
+        "task_008",
+        "task_009",
+        "task_010"
+      ],
+      "priority": 7
+    }
+  ]
+}
