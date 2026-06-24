@@ -91,6 +91,8 @@ button:hover {
 
 /* SERVICES SECTION */
 .services .service-item {
+  display: flex;
+  align-items: center;
   background-color: var(--light-background-color);
   border-radius: 8px;
   padding: var(--spacing-large);
@@ -101,6 +103,18 @@ button:hover {
 .services .service-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.services .icon {
+  width: 64px;
+  height: 64px;
+  margin-right: var(--spacing-large);
+  fill: var(--primary-color);
+  transition: fill 0.3s;
+}
+
+.services .service-item:hover .icon {
+  fill: var(--secondary-color);
 }
 
 /* TESTIMONIALS SECTION */
